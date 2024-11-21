@@ -1,0 +1,86 @@
+/*Selector universal*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: black;
+}
+
+h1{
+    color:blueviolet;
+}
+
+footer{
+    background-color: aqua;
+}
+
+/* Selectores descendentes*/
+
+article p span{
+    font-size: xx-large; /* Tamaño de letra*/
+    color: red; /* Color de letra*/
+    font-family:Verdana, Geneva, Tahoma, sans-serif; /* Tipo de letra*/
+    font-weight: bold; /* Grueso de letra*/
+    
+}
+
+/*Selector de clase*/
+.miclase{
+    background-color: blueviolet;
+}
+
+#menu{
+    background-color:aqua;
+}
+
+/* Selector adyacente */
+h1+p{
+    text-decoration:underline ;
+}
+
+#miP{
+    text-decoration: none;
+}
+
+/* Selector pseudocodigo*/
+
+.miA:hover, .miB:hover{
+    background-color: black;
+    color: brown;
+}
+
+.miA:visited, .miB:link{
+    background-color: aqua;
+    color: blueviolet;
+}
+
+img:hover{
+    opacity: 0;
+}
+
+footer  ::first-letter {    
+    color: #ff0000;
+    font-size: xx-large;
+}
+
+.miClase::before{
+    content: url(/CSS/img/kevinhart-kevin-hart-meme.gif);
+}
+footer ::first-line{
+    color:#ff0000;
+    font-size: 30px;
+}
+
+.i{
+    display: block;
+}@font-face{
+    font-family: magno;
+    src: url(/Noto_Sans_JP/static/NotoSansJP-Thin.ttf);
+}
+
+*{
+    font-family: magno;
+}
